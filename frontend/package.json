@@ -1,5 +1,5 @@
 {
-  "name": "@shopgate-project/ext-variant-images",
+  "name": "@shopgate-project/variant-images",
   "version": "1.0.0",
   "description": "Shows variant selection as product image",
   "license": "UNLICENSED",
