@@ -1,0 +1,25 @@
+{
+  "name": "@shopgate-project/ext-variant-images",
+  "version": "1.0.0",
+  "description": "Shows variant selection as product image",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "check": "nsp check",
+    "coverage": "jest --coverage",
+    "coverage:watch": "jest --coverage --watch"
+  },
+  "devDependencies": {
+    "@shopgate/engage": "^6.13.0",
+    "@shopgate/eslint-config": "^6.13.0",
+    "eslint": "^6.8.0"
+  },
+  "peerDependencies": {
+    "@shopgate/engage": "^6.13.0"
+  },
+  "dependencies": {
+    "@shopgate-ps/pwa-extension-kit": "^0.7.1"
+  }
+}

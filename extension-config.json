@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate-project/ext-variant-images",
+  "components": [
+    {
+      "type": "portals",
+      "target": "product.variant-select",
+      "path": "frontend/components/VariantSelect",
+      "id": "VariantSelect"
+    },
+    {
+      "type": "translations",
+      "path": "frontend/locale/de-DE.json",
+      "id": "locale/de-DE"
+    }
+  ],
+  "configuration": {
+    "imageCharacteristic": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "Farbe",
+      "params": {
+        "type": "text",
+        "label": "The characteristic that will be shown as an image."
+      }
+    },
+    "imageSize": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": 75,
+      "params": {
+        "type": "number",
+        "label": "The size of the image in pixel."
+      }
+    },
+    "selectedColor": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "#000",
+      "params": {
+        "type": "text",
+        "label": "The border color of a selected characteristic."
+      }
+    }
+  }
+}
