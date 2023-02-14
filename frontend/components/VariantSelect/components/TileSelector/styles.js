@@ -9,4 +9,8 @@ const tile = css({
   justifyContent: 'center',
 }).toString();
 
-export default { tile };
+const unselectable = css({
+  opacity: 0.3,
+});
+
+export default { tile, unselectable };

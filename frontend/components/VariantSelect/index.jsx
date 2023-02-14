@@ -91,12 +91,12 @@ class VariantSelect extends Component {
 
     const indexOfFirstSelectableValue = values.findIndex(value => value.selectable === true);
     return values.map((value, index) => {
-      const variantImage = variantImages.find(({ id }) => id === value.id).imageUrl;
+      const variantImage = variantImages.find(({ id }) => id === value.id);
 
       const shouldPreselect = isParentProduct && !disabled && indexOfFirstSelectableValue === index;
-      if (isImageSwatch(characteristics, value)) {
+      if (isImageSwatch(characteristics, value) && variantImage.imageUrl) {
         return (<ImageSwatchSelector
-          imageUrl={variantImage}
+          imageUrl={variantImage.imageUrl}
           {...this.prepareSelectorProps(characteristics, value)}
           preselect={shouldPreselect}
         />);
