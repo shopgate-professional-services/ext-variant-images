@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import BaseSelector from '../BaseSelector';
 import styles from './styles';
 import connector from './connector';
+import getConfig from '../../../../helpers/getConfig';
+
+const {
+  showLableBeneathImage,
+} = getConfig();
 
 /**
  * Color Swatch component
@@ -33,6 +38,10 @@ class ImageSwatchSelector extends Component {
           className={selectable ? styles.image(imageSrc) : `${styles.image(imageSrc)} ${styles.unselectable}`}
           aria-label={label}
         />
+        {showLableBeneathImage ? (
+          <div className={styles.label}>{label}</div>
+        ) : null
+        }
       </BaseSelector>
     );
   }

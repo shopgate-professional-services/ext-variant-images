@@ -41,6 +41,15 @@
         "type": "text",
         "label": "The border color of a selected characteristic."
       }
+    },
+    "showLableBeneathImage": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": false,
+      "params": {
+        "type": "checkbox",
+        "label": "Whether the Label is shown beneath the image or not."
+      }
     }
   }
 }

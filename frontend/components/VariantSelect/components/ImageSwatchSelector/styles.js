@@ -23,7 +23,19 @@ const unselectable = css({
   opacity: 0.3,
 });
 
+const label = css({
+  fontSize: '0.5rem',
+  maxWidth: imageSize,
+  margin: '5px 0px 5px 0px',
+  paddingLeft: '4px',
+  paddingRight: '4px',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+});
+
 export default {
   image,
   unselectable,
+  label,
 };
