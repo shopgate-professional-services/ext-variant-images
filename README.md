@@ -7,6 +7,7 @@ Shows variant selection as product image
 - `imageCharacteristic (string)`: Name of the characteristic that will be shown as an image (e.g. "Color").
 - `imageSize (number)`: The size of the image in pixel.
 - `selectedColor (string)`: The border color of a selected characteristic.
+- `showLableBeneathImage (boolean)`: true/false Whether the Label is shown beneath the image or not.
 
 
 ## Example configuration
@@ -15,7 +16,8 @@ Shows variant selection as product image
 {
   "imageCharacteristic": "Color",
   "imageSize": 75,
-  "selectedColor": "#000"
+  "selectedColor": "#000",
+  "showLableBeneathImage": true,
 }
 ```
 
