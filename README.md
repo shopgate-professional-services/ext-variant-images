@@ -25,6 +25,14 @@ Shows variant selection as product image
 
 This extension needs to have an "eval job" set up by the Shopgate Support.
 
+The eval job should provide a property for each variant named `swatchImage~` + `attribute-name` (`swatchImage~attribute-name`) with the image url as the value.
+
+Example:
+
+```
+swatchImage~Red":"https://www.example.com/red_image.jpg,
+swatchImage~Blue":"https://www.example.com/blue_image.jpg
+```
 
 ## About Shopgate
 
